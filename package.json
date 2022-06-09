@@ -9,7 +9,7 @@
     "type": "git",
     "url": "git+https://demola12@github.com/demola12/slider-videoplayer.git"
   },
-  "keywords": [],
+  "keywords": ["react player", "circular player"],
   "author": "Oyinlade Demola",
   "license": "ISC",
   "bugs": {
