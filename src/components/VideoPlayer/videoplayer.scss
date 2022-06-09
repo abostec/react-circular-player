@@ -1,0 +1,136 @@
+.react-basic-vid-skill{
+
+    position:relative;
+    border:none;
+    outline: unset;
+    .outer{
+        height:100%;
+        position: relative;
+        width:100%;
+        border-radius:50%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        padding:15px;
+        box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(255,255,255,0.7)
+              
+      }
+      .playPause{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        width:100%;
+        height:100%;
+        border-radius:50%;
+        background-color:black;
+        color:#97AAC3;
+        opacity:0;
+        z-index: 1;
+        position:absolute;
+        &:hover{
+          opacity:0.5;
+          cursor:pointer
+        }
+      }
+      .inner{
+        height:100%;
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius:50%;
+          box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2), inset -4px -4px 6px -1px rgba(255,255,255,0.7), -0.5px -0.5px 0px  rgba(255,255,255,1), 0.5px 0.5px 0px  rgba(0,0,0,0.15), 0px 12px 10px -10px rgba(0,0,0,0.05),
+         
+      }
+      .rc{
+        width: 100%;//88%
+        height: 100%;//88%
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        border-radius: 100%;
+        -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+        -webkit-transform: rotate(0.000001deg);
+        -webkit-border-radius: 100%;
+       -moz-border-radius: 100%;
+      };
+      .videoCircle {
+       border-radius: 50%;
+       width: 100%;//88%
+        height: 100%;//88%
+       object-fit: cover;
+       border:none;
+        outline: unset;
+        -webkit-mask-image: -webkit-radial-gradient(white, black);
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -webkit-appearance: none
+       };
+      .videoParent{
+          position:relative
+      };
+      .play{
+          display: block;
+          left: 0;
+          position: absolute;
+          right: 0;
+          top: 50%;
+      
+      }
+      
+  @property --p{
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+  }
+  
+  .circular-loader {
+    --p:20;
+    --b:22px;
+    --c:#bfd8f3;
+    --w:150px;
+    
+    width:var(--w);
+    aspect-ratio:1;
+    position:absolute;
+    display:inline-grid;
+    margin:5px;
+    place-content:center;
+    font-size:25px;
+    font-weight:bold;
+    font-family:sans-serif;
+  }
+  .circular-loader:before,
+  .circular-loader:after {
+    content:"";
+    position:absolute;
+    border-radius:50%;
+  }
+  .circular-loader:before {
+    inset:0;
+    background:
+      radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat,
+      conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
+    -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+            mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+  }
+  .circular-loader:after {
+    inset:calc(50% - var(--b)/2);
+    background:var(--c);
+    transform:rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+  }
+  .animate {
+    animation:p 1s .5s both;
+  }
+  .no-round:before {
+    background-size:0 0,auto;
+  }
+  .no-round:after {
+    content:none;
+  }
+  @keyframes p {
+    from{--p:0}
+  }
+}
+ 
