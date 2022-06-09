@@ -1,21 +1,24 @@
 {
-  "name": "@abostech/react-circular-player",
-  "version": "0.0.1",
+  "name": "@openabos/react-circular-player",
+  "version": "0.0.3",
   "description": "React circular player",
   "scripts": {
     "rollup": "rollup -c"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://abostech@github.com/abostech/react-circular-player.git"
+    "url": "git+https://abostec@github.com/abostec/react-circular-player.git"
   },
-  "keywords": ["react player", "circular player"],
+  "keywords": [
+    "react player",
+    "circular player"
+  ],
   "author": "Oyinlade Demola",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/abostech/react-circular-player/issues"
+    "url": "https://github.com/abostec/react-circular-player/issues"
   },
-  "homepage": "https://github.com/abostech/react-circular-player#readme",
+  "homepage": "https://github.com/abostec/react-circular-player#readme",
   "devDependencies": {
     "@fortawesome/react-fontawesome": "^0.1.18",
     "@rollup/plugin-commonjs": "^22.0.0",
@@ -23,9 +26,7 @@
     "@rollup/plugin-typescript": "^8.3.2",
     "@types/react": "^18.0.12",
     "@types/react-slick": "^0.23.8",
-    "md5": "^2.3.0",
     "react": "^18.1.0",
-    "react-slick": "^0.29.0",
     "rollup": "^2.75.6",
     "rollup-plugin-dts": "^4.2.2",
     "rollup-plugin-scss": "^3.0.0",
@@ -37,8 +38,5 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts",
-  "publishConfig": {
-    "@abostec:registry": "https://npm.pkg.github.com/abostec"
-  }
+  "types": "dist/index.d.ts"
 }

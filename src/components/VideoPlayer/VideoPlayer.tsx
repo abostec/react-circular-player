@@ -1,7 +1,6 @@
 // @flow
 import React from 'react';
 import "./videoplayer.scss";
-const md5 = require('md5');
 export interface VideoProps {
     poster: string;
     src: string;
@@ -14,7 +13,7 @@ export interface MediaElement{
     myInterval:any
 }
 const VideoPlayer = (props:VideoProps) => {
-    const id=md5(props.src);
+    const id=btoa(props.src);
     let y=0;
     let factor=0;
     let duration=0;
