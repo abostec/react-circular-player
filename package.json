@@ -7,15 +7,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://demola12@github.com/demola12/slider-videoplayer.git"
+    "url": "git+https://abostech@github.com/abostech/slider-videoplayer.git"
   },
   "keywords": ["react player", "circular player"],
   "author": "Oyinlade Demola",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/demola12/slider-videoplayer/issues"
+    "url": "https://github.com/abostech/slider-videoplayer/issues"
   },
-  "homepage": "https://github.com/demola12/slider-videoplayer#readme",
+  "homepage": "https://github.com/abostech/slider-videoplayer#readme",
   "devDependencies": {
     "@fortawesome/react-fontawesome": "^0.1.18",
     "@rollup/plugin-commonjs": "^22.0.0",
