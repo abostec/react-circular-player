@@ -19,6 +19,6 @@ src="https://file-examples.com/storage/feefe070bf62a1bca952729/2017/04/file_exam
  boundaryColor="#3F0E40"></Videoplayer>
 ```
 # Demo
-![alt text](https://github.com/abostec/react-circular-player/ezgif.gif)
+<img src="./ezgif.gif"/>
 
 
