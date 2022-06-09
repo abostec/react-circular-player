@@ -39,6 +39,6 @@
   ],
   "types": "dist/index.d.ts",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/abostec"
+    "@abostec:registry": "https://npm.pkg.github.com/abostec"
   }
 }
